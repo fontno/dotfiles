@@ -40,7 +40,7 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git ghost_zeus)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -48,30 +48,6 @@ source $ZSH/oh-my-zsh.sh
 # export PATH=$PATH:/Users/Brian/.rvm/gems/ruby-1.9.3-p392@rails-3.2.13/bin:/Users/Brian/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/Brian/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/Brian/.rvm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export EDITOR='mate -w'
-
-rails() {
-	if [ -S .zeus.sock ]; then
-		zeus "$@"
-	else
-		command rails "$@" 
-	fi
-}
-
-rspec() {
-	if [ -S .zeus.sock ]; then
-		zeus rspec "$@"
-	else
-		command rspec "$@" 
-	fi
-}
-
-rake() {
-	if [ -S .zeus.sock ]; then
-		zeus rake "$@"
-	else
-		command rake "$@" 
-	fi
-}
 
 alias migrate="rake db:migrate && rake db:test:prepare"
 alias mi="rake db:migrate"

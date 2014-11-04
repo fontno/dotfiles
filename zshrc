@@ -49,8 +49,10 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export EDITOR='mate -w'
 
-alias migrate="rake db:migrate && rake db:test:prepare"
-alias mi="rake db:migrate"
+alias rdbmtp="rake db:migrate && rake db:test:prepare"
+alias rdbm="rake db:migrate"
+alias rdbr="rake db:reset"
+alias rdbtp="rake db:test:prepare"
 alias bi="bundle install"
 alias rc="rails console"
 alias rcs="rails console --sandbox"

@@ -4,14 +4,14 @@ execute pathogen#infect()
 "" Basic Setup
 ""
 set nocompatible      " Use vim, no vi defaults
-colorscheme Default
+colorscheme github
 set hidden            " Dont have to write file to switch files in same window
 filetype plugin on    " filetype stuff
 filetype indent on    " ""
 set number            " Show line numbers
 set ruler             " Show line and column number
 ""syntax enable         " Turn on syntax highlighting allowing local overrides
-syntax off
+syntax on
 set encoding=utf-8    " Set default encoding to UTF-8
 set vb                " I hate that damned beeping
 set showmode          " show the current mode

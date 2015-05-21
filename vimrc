@@ -155,7 +155,7 @@ inoremap <leader>e }
 
 
 " vim-rspec plugin mappings
-nnoremap <Leader>rt :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>rs :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>rn :call RunNearestSpec()<CR>
 nnoremap <Leader>rl :call RunLastSpec()<CR>
 nnoremap <Leader>ra :call RunAllSpecs()<CR>

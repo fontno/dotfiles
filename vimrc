@@ -95,6 +95,10 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
+" page up/down
+nnoremap <S-u> <C-b>
+nnoremap <S-d> <C-d>
+
 " suspend vim 
 nnoremap <leader>s <c-z>
 

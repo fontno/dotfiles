@@ -95,6 +95,9 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
+" suspend vim 
+nnoremap <leader>s <c-z>
+
 :cmap md !mkdir
 
 "" space bar folding normal mode

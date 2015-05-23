@@ -111,14 +111,6 @@ vnoremap <F9> zf
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
-"" gem-ctags
-autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(
-      \ pathogen#split(&tags) +
-      \ map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
-
-"" nerdtree
-"map <C-n> :NERDTreeToggle<CR>
-nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " insert newline above or below and stay in current position with shift enter or enter
 nmap <S-Enter> O<Esc>j
@@ -156,6 +148,17 @@ inoremap <leader>d )
 inoremap <leader>w {
 inoremap <leader>e }
 
+
+""
+"" Plugins
+""
+"" gem-ctags
+autocmd FileType ruby let &l:tags = pathogen#legacyjoin(pathogen#uniq(
+      \ pathogen#split(&tags) +
+      \ map(split($GEM_PATH,':'),'v:val."/gems/*/tags"')))
+
+"" nerdtree
+nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " vim-rspec plugin mappings
 nnoremap <Leader>rs :call RunCurrentSpecFile()<CR>

@@ -20,7 +20,8 @@ set scrolloff=1       " lines from top bottom when page scrolls
 set ch=2              " cmdline height
 set autoread
 "set stl=%f\ %m\ %r\ Line:\ %l/%L[%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B] 
-"
+set clipboard=unnamed " copy to clipboard from another instance of vim
+
 "" Change cursor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"

@@ -163,6 +163,18 @@ onoremap p i(
 onoremap h i{
 " operate inside array
 onoremap a i[
+" operate on next params with dnp, cnp
+onoremap np :<c-u>normal! f(vi(<cr>
+" operate on last params with dlp, clp
+onoremap lp :<c-u>normal! f)vi(<cr>
+" operate on next hash with dnh, cnh
+onoremap nh :<c-u>normal! f{vi{<cr>
+" operate on last hash with dlh, clh
+onoremap lh :<c-u>normal! f}vi{<cr>
+" operate on next array with dna, cna
+onoremap na :<c-u>normal! f[vi[<cr>
+" operate on last array with dla, cla
+onoremap la :<c-u>normal! f]vi[<cr>
 
 ""
 "" Plugins

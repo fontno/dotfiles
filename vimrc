@@ -153,6 +153,16 @@ inoremap <leader>d )
 inoremap <leader>w {
 inoremap <leader>e }
 
+""
+"" Operator mappings
+""
+
+" operate inside params
+onoremap p i(
+" operate inside hash
+onoremap h i{
+" operate inside array
+onoremap a i[
 
 ""
 "" Plugins

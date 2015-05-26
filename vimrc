@@ -103,6 +103,9 @@ nnoremap <S-d> <C-d>
 " suspend vim 
 nnoremap <leader>s <c-z>
 
+" close all other splits
+nnoremap co :only<CR>
+
 :cmap md !mkdir
 
 "" space bar folding normal mode

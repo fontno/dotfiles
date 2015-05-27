@@ -203,3 +203,9 @@ nnoremap <leader>ct :s/^\s*<%/&#<CR><esc> :noh<return><esc>
 " uncomment erb
 xnoremap <leader>ut :s/\(^\s*<%\)#/\1<CR><esc> :noh<return><esc>
 nnoremap <leader>ut :s/\(^\s*<%\)#/\1<CR><esc> :noh<return><esc>
+
+" fugitive
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gc :Gcommit<CR>

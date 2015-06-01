@@ -100,6 +100,9 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <S-u> <C-b>
 nnoremap <S-d> <C-d>
 
+" delete to end of line and enter insert mode
+nnoremap ds d$s
+
 " suspend vim 
 nnoremap <leader>s <c-z>
 

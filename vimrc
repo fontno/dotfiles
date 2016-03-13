@@ -216,3 +216,9 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
+
+"gitgutter
+highlight GitGutterAdd ctermfg=118
+highlight GitGutterChange ctermfg=144
+highlight GitGutterDelete ctermfg=161
+highlight GitGutterChangeDelete ctermfg=144

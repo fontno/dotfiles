@@ -4,7 +4,9 @@ execute pathogen#infect()
 "" Basic Setup
 ""
 set nocompatible      " Use vim, no vi defaults
-colorscheme github
+
+colorscheme molokai
+
 set hidden            " Dont have to write file to switch files in same window
 filetype plugin on    " filetype stuff
 filetype indent on    " ""

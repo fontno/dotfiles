@@ -149,6 +149,8 @@ inoremap <leader>k <C-o><Up>
 
 " delete previous word in insert mode
 inoremap <leader>w <C-W>
+"delete next word in insert mode
+inoremap <leader>u <C-U>
 
 " Save my pinky
 inoremap <leader>j _

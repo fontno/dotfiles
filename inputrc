@@ -4,7 +4,7 @@
 set completion-ignore-case on
 
 # Auto list tab completions (use instead of TAB-cycling)
-set show-all-if-ambiguous on
+#set show-all-if-ambiguous on
 
 # Symbolic links to directories have a slash appended
 set mark-symlinked-directories on
